@@ -20,6 +20,9 @@ cgs:
 music:
   rollingCredits: assets/gui/audioEvan_Schaeffer_-_01_-_Aqueduct.mp3
 
+sfx:
+  scoreUpdateSFX: assets/gui/scoreUpdate.mp3
+
 extra:
   image:
     notification: assets/gui/captionBoxSmall.png

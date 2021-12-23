@@ -21,6 +21,7 @@ class Scorer extends RenJS.Plugin {
           return;
       }
         if (this.scorer){
+            this.game.managers.audio.playSFX('scoreUpdateSFX');
             // Just change the scorer value
             this.text.text = this.game.managers.logic.parseVars(params.body);
         } else {
@@ -33,6 +34,7 @@ class Scorer extends RenJS.Plugin {
             this.text = this.game.add.text(0, 0, message, style);
             this.text.anchor.set(0.5);
             this.scorer.addChild(this.text);
+            this.game.managers.audio.playSFX('scoreUpdateSFX');
             await this.game.screenEffects.transition.FADEIN(this.scorer);
         }
         this.game.resolveAction();
