@@ -13,7 +13,6 @@ start:
       - deuzi says normal: Now you have score box on top right corner!
       - deuzi says happy: As you made a right choice, I give you (bold)+50(end) points.
       - var score: "{score} + 50"
-      # - call Scorer: NOFADE
       - call Scorer: "{score}"
     - "Not yet!":
       - deuzi says: Well, scoring is important to keep track of your progress.
