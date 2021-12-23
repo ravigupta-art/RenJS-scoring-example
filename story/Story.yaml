@@ -13,7 +13,7 @@ start:
       - deuzi says normal: Now you have score box on top right corner!
       - deuzi says happy: As you made a right choice, I give you (bold)+50(end) points.
       - var score: "{score} + 50"
-      - call Scorer: REMOVE
+      # - call Scorer: NOFADE
       - call Scorer: "{score}"
     - "Not yet!":
       - deuzi says: Well, scoring is important to keep track of your progress.
@@ -25,7 +25,6 @@ start:
       - call Scorer: "{score}"
   - deuzi says normal: That's it for scoring example.
   - deuzi says happy: Use this example as starting point in your games. Best Wishes!
-  - call Scorer: REMOVE
   - deuzi says normal: If you're new, don't forget to play (bold)the Tutorial(end) game, where me and my friends will show you around the basic features of RenJS.
   - deuzi says happy: And if you already have some experience, you can go ahead and start writing!
   - scene: endGame
